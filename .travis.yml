@@ -21,7 +21,6 @@ script:
 after_success:
   - npm run report-coverage
   - npm run semantic-release:deploy
-# - npm run semantic-release:npm
 branches:
   except:
     - "/^v\\d+\\.\\d+\\.\\d+$/"
