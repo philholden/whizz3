@@ -19,7 +19,9 @@
     "test": "NODE_ENV=test ava src/**/*.test.js",
     "test:watch": "nodemon -w src --exec 'npm t -- --verbose'",
     "test:cover": "nyc --reporter=lcov --reporter=text npm t",
-    "semantic-release": "semantic-release pre && npm=publish --access public && semantic-release post"
+    "deploy": "echo NOOP",
+    "semantic-release:npm": "semantic-release pre && npm publish --access public && semantic-release post",
+    "semantic-release:deploy": "NPM_TOKEN=fake semantic-release pre && npm run deploy && semantic-release post"
   },
   "repository": {
     "type": "git",
@@ -101,7 +103,7 @@
     }
   },
   "release": {
-    "debug": false
+    "debug": false,
   },
   "ava": {
     "require": [
