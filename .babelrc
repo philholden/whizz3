@@ -19,6 +19,11 @@
       ]
     },
     "test": {
+      "plugins": [
+        "transform-flow-strip-types",
+        "react-hot-loader/babel",
+        "__coverage__"
+      ],
       "presets": [
         "react",
         "es2015",

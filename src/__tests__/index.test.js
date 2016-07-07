@@ -9,7 +9,7 @@ import { HelloWorld } from '../components/app'
 expect.extend(expectJSX)
 
 test('is an array of numbers', t => {
-  const {a, ...rest} = { a: 1, c:2}
+  const {a, ...rest} = { a: 1, c:2 }
   t.deepEqual(rest, {c:2})
   t.true(
     [ 1, 2, 3 ].every(item => typeof item === 'number')
