@@ -4,12 +4,16 @@ import React, { Component } from 'react'
 
 type CounterPropsType = {
   increment: number,
-  color?: string,
+  color: string,
+}
+
+type StatePropsType = {
+  counter: number,
 }
 
 export default class Counter extends Component {
   static defaultProps: {};
-  state: Object;
+  state: StatePropsType;
   props: CounterPropsType;
   interval: number;
 

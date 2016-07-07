@@ -1,3 +1,7 @@
+// see here for more ways of testing react components with ava:
+// https://github.com/avajs/ava/blob/master/docs/recipes/react.md
+// Note Enzyme is becoming the norm in the React community
+
 import test from 'ava'
 import is from 'is_js'
 import React from 'react'

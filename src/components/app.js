@@ -10,7 +10,7 @@ export const NotUsed = () => <div>Not Used.</div>
 const App = () => (
   <div>
     <Counter increment={5} color="red" />
-    <Counter increment={5} />
+    <Counter increment={5} color="blue" />
     <HelloWorld />
     <img src={man} alt="man" />
   </div>
