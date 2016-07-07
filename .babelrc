@@ -19,6 +19,7 @@
       ]
     },
     "test": {
+      "sourceMaps": "inline",
       "plugins": [
         "transform-flow-strip-types",
         "react-hot-loader/babel",
